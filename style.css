@@ -1,0 +1,78 @@
+#splash {
+    position: fixed;
+    inset: 0;
+    background: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    z-index: 9999;
+    transition: opacity 0.6s ease-in-out, visibility 0s linear 0s;
+}
+#splash.hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: opacity 0.6s ease-in-out, visibility 0s 0.6s;
+}
+#splash button {
+    width: 72px;
+    height: 72px;
+    background: transparent;
+    border: 1px solid #666;
+    border-radius: 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: border-color 0.2s ease;
+}
+#splash button:hover {
+    border-color: #fff;
+}
+#splash svg {
+    width: 24px;
+    height: 24px;
+    fill: none;
+    stroke: #aaa;
+    stroke-width: 1.5;
+    stroke-linecap: square;
+    stroke-linejoin: miter;
+}
+#splash button:hover svg {
+    stroke: #fff;
+}
+#bar {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background: #000;
+    color: #aaa;
+    padding: 12px 16px;
+    text-align: left;
+    line-height: 1.2;
+    font-family: monospace;
+    font-size: 14px;
+}
+#bar {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background: #000;
+    color: #aaa;
+    padding: 12px 16px;
+    text-align: left;
+    line-height: 1.2;
+    font-family: monospace;
+    font-size: 14px;
+}
+#corner {
+    position: fixed;
+    right: -1000px;
+    bottom: -500px;
+    height: 1400px;
+    width: auto;
+    z-index: 10;
+}
